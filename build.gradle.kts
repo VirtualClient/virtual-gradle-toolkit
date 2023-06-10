@@ -3,7 +3,7 @@ plugins {
     `maven-publish`
 }
 
-group = "gg.essential"
+group = "gg.virtualclient"
 version = "0.1.20"
 
 java.withSourcesJar()
@@ -37,18 +37,17 @@ dependencies {
     implementation(libs.kotlinx.metadata.jvm)
 }
 
-publishing {
+configure<PublishingExtension> {
+    publications {
+        create<MavenPublication>("maven") {
+            from(components["kotlin"])
+        }
+    }
     repositories {
-        val nexusUser = project.findProperty("nexus_user")
-        val nexusPassword = project.findProperty("nexus_password")
-        if (nexusUser != null && nexusPassword != null) {
-            maven("https://repo.essential.gg/repository/maven-releases/") {
-                name = "nexus-public"
-                credentials {
-                    username = nexusUser.toString()
-                    password = nexusPassword.toString()
-                }
-            }
+        maven {
+            name = "virtualclientRepository"
+            credentials(PasswordCredentials::class)
+            url = uri("https://repo.virtualclient.gg/artifactory/virtualclient-public/")
         }
     }
 }

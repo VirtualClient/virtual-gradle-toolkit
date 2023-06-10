@@ -1,1 +1,1 @@
-rootProject.name = "essential-gradle-toolkit"
+rootProject.name = "virtual-gradle-toolkit"
