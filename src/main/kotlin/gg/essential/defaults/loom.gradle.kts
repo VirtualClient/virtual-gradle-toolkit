@@ -85,6 +85,8 @@ revisions.add(Revision(
 
 revisions.add(revisions.last().update(
     yarn = mapOf(
+        12000 to "1.20.0+build.1:v2",
+        11904 to "1.19.4+build.2:v2",
         11903 to "1.19.3+build.5:v2",
         11902 to "1.19.2+build.28:v2",
         11901 to "1.19.1+build.6:v2",
@@ -109,7 +111,7 @@ revisions.add(revisions.last().update(
         10809 to "stable:22-1.8.9",
         10800 to "stable:18-1.8",
     ),
-    fabricLoader = "0.14.2",
+    fabricLoader = "0.14.21",
     forge = mapOf(
         11903 to "1.19.3-44.1.0",
         11902 to "1.19.2-43.2.0",
