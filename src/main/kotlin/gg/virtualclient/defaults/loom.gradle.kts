@@ -93,6 +93,7 @@ revisions.add(revisions.last().update(
         11900 to "1.19+build.4:v2",
         11802 to "1.18.2+build.4:v2",
         11701 to "1.17.1+build.65:v2",
+        11605 to "1.16.5+build.10:v2",
         11604 to "1.16.4+build.9:v2",
         11602 to "1.16.2+build.47:v2",
         11601 to "1.16.1+build.21:v2",
