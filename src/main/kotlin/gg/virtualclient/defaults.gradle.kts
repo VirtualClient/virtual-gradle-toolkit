@@ -1,7 +1,6 @@
 package gg.virtualclient
 
-apply(plugin = "gg.essential.defaults.repo")
-apply(plugin = "gg.essential.defaults.mixin-extras")
+apply(plugin = "gg.virtualclient.defaults.mixin-extras")
 
-pluginManager.withPlugin("java") { apply(plugin = "gg.essential.defaults.java") }
-pluginManager.withPlugin("gg.essential.loom") { apply(plugin = "gg.essential.defaults.loom") }
+pluginManager.withPlugin("java") { apply(plugin = "gg.virtualclient.defaults.java") }
+pluginManager.withPlugin("gg.essential.loom") { apply(plugin = "gg.virtualclient.defaults.loom") }
