@@ -85,7 +85,7 @@ revisions.add(Revision(
 
 revisions.add(revisions.last().update(
     yarn = mapOf(
-        12000 to "1.20+build.1:v2",
+        12001 to "1.20.1+build.1:v2",
         11904 to "1.19.4+build.2:v2",
         11903 to "1.19.3+build.5:v2",
         11902 to "1.19.2+build.28:v2",

@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "gg.virtualclient"
-version = "0.1.21-SNAPSHOT"
+version = "0.1.22-SNAPSHOT"
 
 java.withSourcesJar()
 
